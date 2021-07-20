@@ -22,7 +22,5 @@ public class Assignment1 {
         System.out.println("Enter the number of Natural numbers:");
         int num = sc.nextInt();
         getSum(num);
-
-
     }
 }
