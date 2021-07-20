@@ -1,0 +1,25 @@
+Assignment 1:
+ For a given N, prints the sum of even and odd integers of the first N natural numbers.
+ Example 1:
+ 	Input:
+ 	N = 1
+ 	Output:
+ 	0 1
+ 	Explanation:
+ 	Natural numbers less than 1 are only 1.
+ 	So the sum of even number = 0.
+ 	and the sum of odd number = 1
+
+Assignment 2:
+Given two arrays key[] and arr[] of size N and a key s. Each key[i] and arr[i] form a key-value pair.
+Find if the value of S in the N key-value pairs.
+
+Example:1
+	Input: n = 3
+	keys = {sak, var, vijay}
+	arr = {5, 7, 3}
+	s = sak
+	Output: 5
+	Explanation: The key is present in the map.
+	So its corresponding value is returned which
+	is 5.
