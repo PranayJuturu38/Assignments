@@ -4,17 +4,16 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Assignment2 {
-    static void  map(int n,String[] keys,int[] arr,String s){
+    static int map(int n,String[] keys,int[] arr,String s){
         HashMap<String,Integer> hm = new HashMap<String,Integer>();
         for(int i=0;i<n;i++){
             hm.put(keys[i],arr[i]);
         }
-        System.out.println("Initial mapping"+hm);
-        if(!hm.containsKey(s)){
-            System.out.println("-1");
+        //System.out.println("Initial mapping"+hm);
+        if(hm.containsKey(s)){
+            return hm.get(s);
         }
-        else
-            System.out.println(hm.get(s));
+            return -1;
 
     }
 
