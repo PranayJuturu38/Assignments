@@ -9,12 +9,19 @@ public class Assignment2 {
         for(int i=0;i<n;i++){
             hm.put(keys[i],arr[i]);
         }
-        //System.out.println("Initial mapping"+hm);
         if(hm.containsKey(s)){
             return hm.get(s);
         }
+        else
             return -1;
 
+    }
+    static void getHashMap(int n, String[] keys,int[] arr){
+        HashMap<String,Integer> gethash = new HashMap<String,Integer>();
+        for(int i=0;i<n;i++){
+            gethash.put(keys[i],arr[i]);
+        }
+       System.out.println("Initial Mapping "+gethash);
     }
 
     public static void main(String[] args) {
@@ -30,9 +37,9 @@ public class Assignment2 {
             keys[i] = sc.next();
         }
         //Displaying the keys entered
-        System.out.println("Keys entered:");
+        System.out.println("Keys entered:\t");
         for(int i=0;i<num;i++){
-            System.out.println(keys[i]);
+            System.out.println("\t"+keys[i]);
         }
         //Taking the values for the keys
         System.out.println("Enter the values for the keys");
@@ -40,11 +47,14 @@ public class Assignment2 {
         for(int i=0;i<num;i++){
             array[i]=sc.nextInt();
         }
+
+        getHashMap(num,keys,array);
+
         //Taking the String s to search the required key
         System.out.println("Enter the value of S:");
         String str = sc.next();
 
         //Passing the inputs as parameters
-        map(num,keys,array,str);
+       System.out.println( map(num,keys,array,str));
     }
 }
